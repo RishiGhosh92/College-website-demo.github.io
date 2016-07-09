@@ -1,0 +1,23 @@
+
+<div id="col1">
+<br><br><strong> <a href="template.php"> Undergraduate </strong></a><br>
+<br><br> <a href="template.php"> Fee Structure </a><br>
+
+</div>
+
+<div id="col2">
+<br><br><strong> <a href="template.php"> Postgraduate </strong></a><br>
+<br><br> <a href="template.php"> Useful Information </a><br>
+
+</div>
+
+
+<div id="col3">
+<br><p>Join a community of the world's brightest minds and prepare to tackle its greatest problems. Here, your ideas will be heard, supported, questioned, tested, and honed as you form a network of lifelong friends, colleagues, and collaborators.</p>
+</div>
+
+<div id="col4">
+<img src="menu/2.jpg" width="310" height="210"></img>
+</div>
+
+

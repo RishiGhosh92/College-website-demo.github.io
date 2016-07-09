@@ -1,0 +1,22 @@
+<div id="col1">
+<br><br><a href="template.php">IIITDMJ</a><br>
+<br><br><a href="template.php">Collaborators</a><br>
+
+</div>
+
+<div id="col2">
+
+<br><br><a href="template.php"> Infrastructure </a><br>
+
+</div>
+
+
+<div id="col3">
+<br><p>The Mission of the Institute is to create a multidisciplinary academic environment to prepare and train manpower of excellence for
+ nurturing and promoting knowledge-based activities and innovations in design, fabrication and manufacturing 
+of products by bringing together a collaborative and mutually stimulating mix of different fields of science, engineering and arts.</p>
+</div>
+
+<div id="col4">
+<img src="menu/1.jpg" width="310" height="210"></img>
+</div>

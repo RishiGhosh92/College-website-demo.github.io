@@ -1,0 +1,257 @@
+<html>
+<head>
+<script type='text/javascript' src='jquery-1.10.1.min.js'></script>
+<script type="text/javascript" src="script2.js"></script>
+<script>
+var j=0;
+function titlefade() {
+
+	if(j==0){
+	$('#hin').hide();
+	$('#hinsub').hide();
+	$('#eng').fadeIn(1000);
+	j=1;}
+	else{
+	$('#eng').hide();
+	$('#hinsub').fadeIn(1000);
+	$('#hin').fadeIn(1000);
+	j=0;}
+	setTimeout(titlefade, 3000);
+	}
+titlefade();
+</script>
+
+				<style>
+				* {
+				padding: 0;
+				margin: 0;
+				} 
+
+				body{background-color:#002966;
+					padding:0;
+					margin:0;
+					
+					
+				}
+            
+				#top_links{background-color:#3A3A38;color:white;height:25px; width:100%;position:absolute;padding-top:2px;}
+	
+	#top_links a:link{color:F3F3F1;
+			  text-decoration:none;}
+		#top_links a:visited{color:F3F3F1;}
+		#top_links a:hover{
+				color:white;
+			//	text-decoration:underline;
+				//font-weight:bold;}
+		#top_links a:active{background-color:002966;}
+	
+            
+ 
+ 
+            
+			/* stylize the menus */
+            .topmenu {
+				position:absolute;
+				list-style-type:none;
+				margin:0;
+				padding-left:2.6em;
+				padding-right:11em;
+				overflow:hidden;
+				left:0em;
+				top:9.38em;
+				text-shadow:rgb(110,110,110) 5px 5px 10px;
+				
+				//border: 1px solid black;
+				box-shadow:0px -2px 3px rgba(50, 50, 50, 1);
+				//border-radius:5px;
+				
+            }
+ 
+            
+ 
+            .submenus {
+				 position:absolute;
+				background-color:white;
+                height:16em;
+				width:100%;
+				left:0em;
+				top:12.06em;
+				text-shadow:rgb(110,110,110) 5px 5px 10px;
+				box-shadow:rgb(110,110,110) 5px 5px 10px;
+				color:#002999;
+                display:none; /* hide the submenus on page load */
+                
+            }
+			
+			#col1{position:absolute;top:0.6em;left:5em;font-size:1.3em;}
+			#col2{position:absolute;top:0.6em;left:15em;font-size:1.3em;}
+			#col3{position:absolute;top:0.6em;left:34em; color:grey; width:18em;font-size:1.2em;}
+			#col4{position:absolute;top:2em;left:64em;}
+			.topmenu li{float:left;}
+            
+ 
+            
+			
+			
+ 
+			
+            
+			
+			#top {
+				color:white;
+                display:block;
+                
+				padding-top:0.48em;
+				padding-bottom:0.48em;
+				padding-right:1.0em;
+				padding-left:1.44em;
+                font-weight:bold;
+				font-size:1.3em;
+                height:1.1em;
+                text-decoration:none;
+                background-color:#002966;
+                text-align:center;
+				margin-left:0em;
+			//	box-shadow: 0 0 10px #9ecaed;
+				
+                
+               
+            }
+			#top_bar{
+	 position:absolute;
+	 top:0.2em;
+	 }
+	 #text{
+	 color:white;
+	 font: 43px/50px georgia;
+	 font-size:70px;
+	 position:relative;
+	 top:60px;
+	 left:320px;
+	 
+	 }
+	 
+	 	  #hin{
+	 color:white;
+	 font: 43px/50px georgia;
+	 font-size:36px;
+	 position:relative;
+	 top:20px;
+	 left:200px;
+	 padding-right:20px;
+	 display:none;
+	 
+	 }
+	 
+	 #eng{
+	 color:white;
+	 font: 43px/50px georgia;
+	 font-size:32px;
+	 position:relative;
+	 top:20px;
+	 left:200px;
+	 
+	 }
+	 
+		 #logo{
+	 position:absolute;
+	 top:2.4em;
+	 left:3em;
+	 }
+	 
+	 #footer{
+	position:absolute;
+	top:1576px;
+	background-color: #002966;
+	 width: 1349px;
+     height: 100px;
+	}
+	
+	#emptycontainer{position:absolute;
+	left:17em;
+	top:15em;
+	color:white;
+	font-size:2em;
+	}
+		#sear{
+		position:absolute;
+		top:0;
+		left:70em;
+		}
+	</style>
+</head>
+<body>
+				
+				<div id="top_bar">
+				
+					<div class="text">
+					<div id="eng"><span id="eng" style="top:18; left:0;font-size:20">PDPM</span><br>Indian Institute of Information Technology, Design and Manufacturing Jabalpur</div>
+					<span id="hinsub" style="display:none;position:absolute;top:50; left:200;font-size:20;color:white">&#2346;&#2368;.&#2337;&#2368;.&#2346;&#2368;.&#2319;&#2350;</span><div id="hin"><br>&#2349;&#2366;&#2352;&#2340;&#2368;&#2351; &#2360;&#2370;&#2330;&#2344;&#2366; &#2346;&#2381;&#2352;&#2380;&#2342;&#2381;&#2351;&#2379;&#2327;&#2367;&#2325;&#2368;, &#2309;&#2349;&#2367;&#2325;&#2354;&#2381;&#2346;&#2344; &#2319;&#2357;&#2306; &#2357;&#2367;&#2344;&#2367;&#2352;&#2381;&#2350;&#2366;&#2339; &#2360;&#2306;&#2360;&#2381;&#2341;&#2366;&#2344; &#2332;&#2348;&#2354;&#2346;&#2369;&#2352;</div>
+					</div>
+					<div id="logo">
+					<img src="logo.jpg" width="100"/>
+					
+					</div>
+				</div>
+				 <div id="top_links"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                           
+                                <a href="template.php">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="template.php">How to reach</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="template.php">Facilities</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="template.php">RTI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="template.php">Vigilance</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="template.php">Jobs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <form method="get" action="http://www.google.com/search" target="_blank">
+								<div id="sear" style="margin-right: 3px" align="center">
+								<table border="0"   cellpadding="0">
+								<tr><td>
+ 
+								<input type="text"   name="q" size="22" maxlength="255" placeholder="Inside IIITDMJ" />
+ 
+								<input type="image" onClick="submit" src="images/search.png" onMouseOver="this.src='images/search.png'" onMouseOut="this.src='images/search.png'" align="absmiddle" width="24" height="24"/>
+ 
+								</td> <td  style="font-size:75%">
+ 
+								<input type="hidden"  name="sitesearch"  value="www.iiitdmj.ac.in" checked /> 
+ 
+								</td></tr></table>
+ 
+								</div>
+ 
+								</form>
+ 
+                                </div>
+				
+				<div class="nav">
+					<div class="submenus">
+					</div>
+					<ul class="topmenu">
+					
+						<li id="about"><a id="top" href="#" style="margin-left:0.5em;padding-left:0.3em">About</a></li>
+						<li id="admissions"><a id="top" href="#">Admissions</a></li>
+						<li id="academics"><a id="top" href="#">Academics</a></li>
+						<li id="people"><a id="top" href="#">People</a></li>
+						<li id="students"><a id="top" href="#">Student's Life</a></li>
+						<li id="admin"><a id="top" href="#">Administration</a></li>
+						<li id="links"><a id="top" href="#" style="margin-right:0em;">Quick Links</a></li>
+						<li><a id="top" href="http://mail.iiitdmj.ac.in/squirrelmail/src/login.php"><img src="noticon/email.png" width="55px" height="35px" title="IIITDMJ Mail"/></a></li>
+					
+					</ul>
+				</div>
+				<div id="emptycontainer">
+				
+				<br>EMPTY CONTAINER<br> /*Content Goes Here*/
+				
+				
+				
+				
+				</div>
+				
+				<div id="footer">
+					<p><h4 style="text-align:center;">&copy; Copyright 2013 IIITDM Jabalpur<a href="#"></a> |  <a href="People/webteam.html">Webteam</a> |  <a href="sitemap.html">Sitemap</a> |
+
+					<br>Dumna Airport Road,  P.O.: Khamaria, Jabalpur - 482 005, Madhya Pradesh, India<br>Tel:+91-761-2632273  Fax: +91-761-2632524</h4><br></p>
+
+
+				</div>
+</body>
+</html>

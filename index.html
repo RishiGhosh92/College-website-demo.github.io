@@ -1,1 +1,705 @@
-Hello World
+<html>
+<head>
+<script type='text/javascript' src='jquery-1.10.1.min.js'></script>
+<script>
+var i=-2;
+
+function divfade() {
+
+	$("#pn1").hide();
+	$("#pn2").hide();
+	$("#pn3").hide();
+	$("#pn4").hide();
+	$("#pn5").hide();
+	$("#pn"+i).fadeIn(600);
+	$("#lat1").hide();
+	$("#lat2").hide();
+	$("#lat3").hide();
+	$("#lat4").hide();
+	$("#lat5").hide();
+	$("#lat"+i).fadeIn(600);
+	i++;
+	if(i==6)
+	i=1;
+    setTimeout(divfade, 3000);
+	
+};
+var j=0;
+function titlefade() {
+
+	if(j==0){
+	$('#hin').hide();
+	$('#hinsub').hide();
+	$('#eng').fadeIn(1000);
+	j=1;}
+	else{
+	$('#eng').hide();
+	$('#hinsub').fadeIn(1000);
+	$('#hin').fadeIn(1000);
+	j=0;}
+	setTimeout(titlefade, 3000);
+	}
+divfade();
+titlefade();
+</script>
+<style>
+* {
+padding: 0;
+margin: 0;
+} 
+
+body{background-color:	 #E6E6DC;
+	padding:0;
+	margin:0;
+	
+	
+}
+            
+            
+ 
+ 
+            
+			/* stylize the menus */
+            .topmenu {
+				position:absolute;
+				list-style-type:none;
+				margin:0;
+				padding-left:2.6em;
+				padding-right:11em;
+				overflow:hidden;
+				left:0em;
+				top:9.38em;
+				text-shadow:rgb(110,110,110) 5px 5px 10px;
+				
+				//border: 1px solid black;
+				box-shadow:0px -2px 3px rgba(50, 50, 50, 1);
+				//border-radius:5px;
+				background-color:#002966;
+				
+            }
+ 
+            
+				#cal	
+				{
+					position:absolute;
+					top:76em;
+					left:1.3em;
+				}
+            .submenus {
+				 position:absolute;
+				background-color:white;
+                height:16em;
+				width:100%;
+				left:0em;
+				top:12.06em;
+				text-shadow:rgb(110,110,110) 5px 5px 10px;
+				box-shadow:rgb(110,110,110) 5px 5px 10px;
+				color:#002999;
+                display:none; /* hide the submenus on page load */
+                
+            }
+			
+			.submenus a:link{color:#002999;
+			  text-decoration:none;}
+		.submenus a:visited{color:#002999;}
+		.submenus a:hover{
+				color:#995999;
+				text-decoration:none;
+				//font-weight:bold;}
+		.submenus a:active{background-color:#002999;}
+			
+			#col1{position:absolute;top:0.6em;left:5em;font-size:1.3em;color:#002999;}
+			#col2{position:absolute;top:0.6em;left:15em;font-size:1.3em;color:#002999;}
+			#col3{position:absolute;top:0.6em;left:34em; color:grey; width:18em;font-size:1.2em;}
+			#col4{position:absolute;top:2em;left:64em;}
+			.topmenu li{float:left;}
+            
+ 
+            
+			
+			
+ 
+			
+            
+			
+			#top {
+				color:white;
+                display:block;
+                
+				padding-top:0.48em;
+				padding-bottom:0.48em;
+				padding-right:1.0em;
+				padding-left:1.44em;
+                font-weight:bold;
+				font-size:1.3em;
+                height:1.1em;
+                text-decoration:none;
+                background-color:#002966;
+                text-align:center;
+				margin-left:0em;
+			//	box-shadow: 0 0 10px #9ecaed;
+				
+                
+               
+            }
+			.images img{
+			
+			-webkit-transition-property:opacity;
+			-webkit-transition-duration: 3s;
+			-moz-transition-property:opacity;
+			-moz-transition-duration: 3s;
+			position:absolute;
+			top:0;
+			width: 1349;
+			height:480;
+			}
+			.images img.fade-out{opacity:0}
+			.images img.fade-in{opacity:1}
+
+#sub-category{
+
+        border: 0 solid black;
+        height: 25em;
+        margin: 12.5em 0.65em;
+        overflow: hidden;
+        position: relative;
+        width: 80em;
+
+     }
+     .item{
+        position: absolute;
+        left:0;
+        top: 2.1em;
+        width: 11.63em;
+        height: 2em;
+       // border: solid 1px black;
+        background: #046380;
+        font: 43px/50px georgia;
+        color:white;
+		text-align:center;
+     }
+     #sub-category1{
+        background-color: maroon;
+     }
+     #sub-category2{
+	    left:1350px;
+        background-color: green; 
+     }
+     #sub-category3{
+        left:2700px;
+        background-color: orange;
+     }
+	 #sub-category4{
+        left:4050px;
+		background-color: maroon;
+     }
+	 
+	 #sub2-category{
+        border: 0 solid black;
+        height: 25em;
+        margin: 12.5em 0.65em;
+        overflow: hidden;
+        position: absolute;
+        width: 80em;
+		top:5.3em;
+     }
+     .item2{
+         position: absolute;
+        left:0;
+        top: 2.1em;
+        width: 12.63em;
+        height: 3em;
+       // border: solid 1px black;
+        background: #046380;
+        font: 30px/40px georgia;
+        color:grey;
+		text-align:center;
+        
+     }
+     #sub2-category1{
+        background-color: white;
+     }
+     #sub2-category2{
+	    left:1350px;
+        background-color: white; 
+     }
+     #sub2-category3{
+        left:2700px;
+        background-color: white;
+     }
+	 #sub2-category4{
+        left:4050px;
+		background-color: white;
+     }
+	 #slideshow{
+	 position:absolute;
+	 top:12.15em;
+	 }
+	 
+	 #top_bar{
+	 position:absolute;
+	 top:0.2em;
+	
+	 }
+	  #hin{
+	 color:white;
+	 font: 43px/50px georgia;
+	 font-size:36px;
+	 position:relative;
+	 top:20px;
+	 left:200px;
+	 padding-right:20px;
+	 display:none;
+	
+	 
+	 }
+	 
+	 #eng{
+
+	 color:white;
+	 font: 43px/50px georgia;
+	 font-size:32px;
+	 position:relative;
+	 top:20px;
+	 left:200px;
+	 
+	 }
+	 
+	 #logo{
+	 
+	 position:absolute;
+	 top:2.4em;
+	 left:3em;
+	 }
+	 #news{
+	position:absolute;
+	top:676px;
+	background-color: #F5F4F0;
+	 width: 1349px;
+     height: 300px;
+	 }
+	 .newsrow{
+	 position:absolute;
+	 top:80px;
+	 }
+	 #news1{
+	 left:90px;
+	 width: 270px;
+     height: 200px;
+	 }
+	 #news2{
+	 left:390px;
+	 width: 270px;
+     height: 200px;
+	 }
+	 #news3{
+	 left:690px;
+	 width: 270px;
+     height: 200px;
+	 }
+	 #latnews{
+	 left:1010px;
+	 width:270px;
+	 height:200px;
+	 }
+	 
+	 #lat5,#lat4,#lat3,#lat2,#lat1{
+	 display:none;
+	 position:absolute;
+	 top:60;left:0;
+	 width:240px;
+	 height:100px;
+	 }
+	 
+	 
+	#placementnews a:link, #news a:link{color:black;
+			  text-decoration:none;}
+		#placementnews a:visited,#news a:visited{color:black;}
+		#placementnews a:hover,#news a:hover{color:#002966;
+				text-decoration:underline;
+				font-weight:bold;}
+		#placementnews a:active,#news a:active{background-color:orange;}
+		
+		
+	#placementnews{position:relative;top:62.02em;background-color:white;width:400px; height:200px;}
+	#pn1,#pn2,#pn3,#pn4,#pn5{position:absolute;top:4.0em;left:20px;font-size:18px;display:none;}
+	
+	#top_links{background-color:#3A3A38;color:white;height:25px; width:100%;position:absolute;padding-top:2px;}
+	
+	#top_links a:link{color:F3F3F1;
+			  text-decoration:none;}
+		#top_links a:visited{color:F3F3F1;}
+		#top_links a:hover{
+				color:white;
+				text-decoration:underline;
+				//font-weight:bold;}
+		#top_links a:active{background-color:002966;}
+		
+	#footer a:link{color:white;
+			  text-decoration:underline;}
+		#footer a:visited{color:white;}
+		#footer a:hover{
+				color:white;
+				text-decoration:underline;
+				//font-weight:bold;}
+		#footer a:active{background-color:blue;}
+	
+	#not{
+	position:absolute;
+	top:62em;
+	left:68.1em;
+	background-color:white;
+	 width: 255px;
+     height: 300px;
+	}
+	
+	#arc ul , #not ul{list-style-image:url(noticon/right.png);margin-left:30px;
+		margin-top:10px;
+		 }
+	
+	#pub{
+	position:absolute;
+	top:89em;
+	left:1em;
+	background-color:white;
+	 width: 250px;
+     height: 150px;
+	}
+	#arc{
+	position:absolute;
+	top:81.2em;
+	left:68.1em;
+	background-color:white;
+	 width: 255px;
+     height: 275px;
+	
+	}
+	#arc li{padding:10px;}
+	#arc ul{
+		
+		
+	}
+	#footer{
+	color:white;
+	position:absolute;
+	top:1576px;
+	background-color: #002966;
+	 width: 1349px;
+     height: 100px;
+	}
+	
+
+	#vis{
+	position:absolute;
+	top:62em;
+	left:26em;
+	background-color:white;
+	 width: 650px;
+     height: 600px;
+	
+	}
+	#vis p{font-size:17px;padding-left:9px;padding-top:15px;}
+	#sear{
+	background-color:#002966;
+		position:absolute;
+		top:0;
+		left:70em;
+		}
+#text{margin:0;background-color:#002966;padding:30px;border:2px solid black;}		
+		
+</style>
+</head>
+<body>
+				
+				
+				
+				<div id="top_bar">
+				
+				
+					<div class="text">
+					<div id="eng"><span id="eng" style="top:18; left:0;font-size:20">PDPM</span><br>Indian Institute of Information Technology, Design and Manufacturing Jabalpur</div>
+					<span id="hinsub" style="display:none;position:absolute;top:50; left:200;font-size:20;color:white">&#2346;&#2368;.&#2337;&#2368;.&#2346;&#2368;.&#2319;&#2350;</span><div id="hin"><br>&#2349;&#2366;&#2352;&#2340;&#2368;&#2351; &#2360;&#2370;&#2330;&#2344;&#2366; &#2346;&#2381;&#2352;&#2380;&#2342;&#2381;&#2351;&#2379;&#2327;&#2367;&#2325;&#2368;, &#2309;&#2349;&#2367;&#2325;&#2354;&#2381;&#2346;&#2344; &#2319;&#2357;&#2306; &#2357;&#2367;&#2344;&#2367;&#2352;&#2381;&#2350;&#2366;&#2339; &#2360;&#2306;&#2360;&#2381;&#2341;&#2366;&#2344; &#2332;&#2348;&#2354;&#2346;&#2369;&#2352;</div>
+					</div>
+					<div id="logo">
+					<img src="logo.jpg" width="100"/>
+					
+					</div>
+				</div>
+				
+				 <div id="top_links"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                           
+                                <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="template.html">How to reach</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="template.html">Facilities</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="template.html">RTI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="template.html">Vigilance</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="template.html">Jobs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <form method="get" action="http://www.google.com/search" target="_blank">
+								<div id="sear" style="margin-right: 3px" align="center">
+								<table border="0"   cellpadding="0">
+								<tr><td>
+ 
+								<input type="text"   name="q" size="22" maxlength="255" placeholder="Inside IIITDMJ" />
+ 
+								<input type="image" onClick="submit" src="images/search.png" onMouseOver="this.src='images/search.png'" onMouseOut="this.src='images/search.png'" align="absmiddle" width="24" height="24"/>
+ 
+								</td> <td  style="font-size:75%">
+ 
+								<input type="hidden"  name="sitesearch"  value="www.iiitdmj.ac.in" checked /> 
+ 
+								</td></tr></table>
+ 
+								</div>
+ 
+								</form>
+ 
+                                </div>
+
+				<div id="slideshow">
+					<div class="images">
+					<img src="images/1.jpg"/>
+					<img src="images/2.jpg"/>
+					<img src="images/3.jpg"/>
+					<img src="images/4.jpg"/>
+					</div>
+					
+					<div id="sub-category">
+						<div id="sub-category1" class="item">Fests</div>
+						<div id="sub-category2" class="item">IIITDMJ 5th Convocation</div>
+						<div id="sub-category3" class="item">IIITDMJ Campus</div>
+						<div id="sub-category4" class="item">IIITDMJ</div>
+					</div>
+					<div id="sub2-category">
+						<div id="sub2-category1" class="item2">Amazing Technical,Sports and Cultural Fest</div>
+						<div id="sub2-category2" class="item2">Ceremony reflected past accomplishment</div>
+						<div id="sub2-category3" class="item2">21st Century Campus</div>
+						<div id="sub2-category4" class="item2">Born for Innovation in Engineering</div>
+					</div>
+				</div>
+				<div class="nav">
+					<div class="submenus">
+					</div>
+					<ul class="topmenu">
+					
+						<li id="about"><a id="top" href="#" style="margin-left:0.5em;padding-left:0.3em">About</a></li>
+						<li id="admissions"><a id="top" href="#">Admissions</a></li>
+						<li id="academics"><a id="top" href="#">Academics</a></li>
+						<li id="people"><a id="top" href="#">People</a></li>
+						<li id="students"><a id="top" href="#">Student's Life</a></li>
+						<li id="admin"><a id="top" href="#">Administration</a></li>
+						<li id="links"><a id="top" href="#" style="margin-right:0em;">Quick Links</a></li>
+						<li><a id="top" href="http://mail.iiitdmj.ac.in/squirrelmail/src/login.php"><img src="noticon/email.png" width="55px" height="35px" title="IIITDMJ Mail"/></a></li>
+					
+					</ul>
+				</div>
+				<!-- news feed -->
+				<div id="news"><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News</h1>
+                                        <div id="news1" class="newsrow"><a title="SOAA-2013" href="template.html"><img src="newsimage/a.jpg" width="270px" height="150px">
+                                        <h3>School on Advanced<br>Algorithms - 2013</h3></img></a></div>
+                                        <div id="news2" class="newsrow"><a title="MATLAB workshop" href="template.html"><img src="newsimage/b.jpg" width="270px" height="150px"><h3>Second Workshop on<br>MATLAB</h3></img></a></div>
+                                        <div id="news3" class="newsrow"><a title="IEEE conference" href="template.html"><img src="newsimage/c.jpg" width="270px" height="150px"><h3>IEEE Conference -<br> CARE 2013</h3></img></a></div>
+                                        <div id="latnews" class="newsrow">
+                                                <h3>Latest News</h3><br><br>
+                                                <div id="lat1"><a href="template.html"><h3>Second Workshop on MATLAB</h3></a></div>
+                                                <div id="lat2"><a href="template.html"><h3>Training Program "CNC Programming,Simulation and Operation</h3></a></div>
+                                                <div id="lat3"><a href="template.html"><h3>School on Advanced Algorithms - SOAA 2013</h3></a></div>
+                                                <div id="lat4"><a href="template.html"><h3>IEEE Conference - CARE 2013</h3></a></div>
+                                                <div id="lat5"><a href="template.html"><h3>Dr. Sachin Kumar Jain Bagged POSCO power System Award</h3></a></div>
+                                                <br><br><br><a href="template.html"><h4 style="text-align:right">More News ></h4></a>
+                                        
+										</div>
+										<hr>
+                                </div>
+								
+				
+
+				
+				<!-- placement news-->
+				<div id="colorr" style="background-color:#002966;">
+				<div id="placementnews"><h2 align="center" style="background-color:3051AC;color:white;">Placement News</h2>
+                                                
+                                                <div id="pn1" class="pn"><a href="template.html"><h3>BEL (Bharat Electronics Ltd.) Navaratna PSU offered R&D profile to 12 students</h3></a></div>
+                                                <div id="pn2" class="pn"><a href="template.html"><h3>HITACHI</h3></a></div>
+                                                <div id="pn3" class="pn"><a href="template.html"><h3>CANON JAPAN (Highest offer)</h3></a></div>
+                                                <div id="pn4" class="pn"><a href="template.html"><h3>Capital-IQ offered 7.2lpa</h3></a></div>
+                                                <div id="pn5" class="pn"><a href="template.html"><h3>Microsoft offered 12lpa</h3></a></div>
+                                                <br><br><br><br><br><br><br><a href="template.html"><h4 style="text-align:right">More News ></h4></a>
+                                </div>
+				<div id="cal"><a href="template.html"><img src="calendar.jpg" width="300px" height="180px"/></a></div>
+				<!--notice tab-->
+			<div id="not">
+        <h2 align="center" style="background-color:#3051AC;color:white;">NOTICES</h2>
+        <marquee direction="up" behavior="scroll" scrollamount="5" style="height: 170px" onMouseover="this.scrollAmount=0" onMouseout="this.scrollAmount=4">
+        <ul style="color:#3051AC">
+        <li><a href="template.html"><img src="noticon/new.gif" width="40" height="40"/><b>Phd Admission in <br>Natural Sciences</b></a></li><br><br>
+        <li><a href="template.html"><img src="noticon/new.gif" width="40" height="40"/><b>Forms Download</b></a></li><br><br>
+        <li><a href="template.html"><img src="noticon/new.gif" width="40" height="40"/><b>PG Admission 2013</b></a></li><br><br>
+        <li><a href="template.html"><img src="noticon/new.gif" width="40" height="40"/><b>M.Tech Admission 2013</b></a></li><br><br>
+        <li><a href="template.html"><b>List of candidates short-listed for Admission in PhD Programme under QIP for the Year 2013-14</b></a></li><br><br>
+        <li><a href="template.html"><b>Project Vacancy: (JRF)</b></a></li><br><br>
+        <li><a href="template.html"><b>Jobs@IIITDMJ</b></a></li><br><br>
+        <li><a href="template.html"><b>Tenders@IIITDMJ</b></a></li>
+        </ul>
+        </marquee>
+</div>
+
+<div id="vis">
+<h2 align="center" style="background-color:#2B499B;color:white;">VISION</h2>
+
+<p ><em>Indian Institute of Information Technology, Design and Manufacturing (IIITDM)<br><br> Jabalpur,one of the premier technical Institutes of the country, established by Ministry of<br><br> Human Resource Development (MHRD), Government
+of India, shall be a Global Center<br><br> of Excellence in engineering education and research by building itself as an Enterprise of<br><br>
+ Knowledge. The academic community including students, shaped with the unique<br><br> creativity based on fundamental strong multidisciplinary academic skills, the capacity for<br><br>
+ a bold innovative thinking involving positive change and an integrity of character,<br><br>
+ grounded in an active and resolutely pioneering spirit, shall be indulged in meaningful<br><br> innovations based on a knowledge-based engineering approach.</em></p>
+<br><hr>
+ <a href="http://www.iiitdmj.ac.in/brochure_2013.pdf"><img src="broucher.jpg" width="100" style="position:relative;top:40px"/> <span style="font-size:25px;text-shadow:rgb(110,110,110) 5px 5px 10px;color:#002999;">INSTITUE BROUCHER</span></a>
+ </div>
+
+<div id="pub">
+ 
+<h2 align="center" style="background-color:#3051AC;color:white;">Publications</h2>
+<br>
+<table WIDTH="250" cellpadding="15px" cellspacing="10">
+        <tr>
+                <td>
+                        <b><a href="template.html">2007</a></b>
+                </td>   
+                <td>    
+                        <b><a href="template.html">2008</a></b>
+                </td>
+                <td>
+                        <b><a href="template.html">2009</a></b>
+                </td>
+                <td>
+                        <b><a href="template.html">2010</a></b>
+                </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>                    
+                <td>
+                        <b><a href="template.html">2011</a></b> 
+                </td>
+                <td>
+                        <b><a href="template.html">2012</a></b>
+                </td>
+        </tr>
+</table>
+</div>
+ 
+<div id="arc">
+ 
+<h2 align="center" style="background-color:#2B499B;color:white;">Archive</h2>
+ 
+<ul>
+<li><p><a href="template.html"><b>Convocation - 2012</b></a></p></li>
+<li><p><a href="http://wow2012.iiitdmj.ac.in/"><b> WoW2012</b></a></p></li>
+<li><p><a href="template.html"><b> Altair Suite Workshop</b></a></p></li>
+<li><p><a href="template.html"><b> NPTEL Workshop </b></a></p></li> 
+<a href="template.html"><h4 style="text-align:right">[More]</h4></a>
+ 
+</ul>
+</div>
+
+
+
+</div>
+<div id="footer">
+
+<hr>
+<br>
+<p><h4 style="text-align:center;">&copy; Copyright 2013 IIITDM Jabalpur<a href="template.html"></a> |  <a href="template.html">Webteam</a> |  <a href="template.html">Sitemap</a> |
+ 
+<br>Dumna Airport Road,  P.O.: Khamaria, Jabalpur - 482 005, Madhya Pradesh, India<br>Tel:+91-761-2632273  Fax: +91-761-2632524</h4><br></p>
+ 
+ 
+</div>
+
+				
+				
+				
+
+
+<script type="text/javascript" src="script2.js"></script>
+
+<script>
+var interval = 60; // Seconds between change
+var images = $(".images img");
+var imageArray = [];
+var imageCount = images.length;
+var current = 0;
+for(var i = 0; i < imageCount; i++){
+
+images[i].style.opacity = "0";
+imageArray[i] = images[i];
+}
+//imageArray.sort(4);
+current == 0;
+var fade = function(){
+
+imageArray[current++].style.opacity = "0";
+if(current == imageCount){
+current = 0;
+//imageArray.sort(4);
+}
+imageArray[current].style.opacity = "1";
+
+setTimeout(fade, interval * 100);
+};
+function SlideDivSection() {
+        var items = ['sub-category1', 'sub-category2', 'sub-category3','sub-category4'];
+        var container = $('#sub-category')
+        var item_width = 1350;
+
+        setInterval(function () {
+
+           var first = $('.item:first', container);
+           var faux_id = first.attr('id') + 'faux';
+           var faux_elem = $($('<div/>').append(first.clone()).html()).attr('id', faux_id).css({
+              left: item_width * items.length,
+              backgroundColor: first.css('background-color')
+           })
+           container.append(faux_elem);
+           faux_elem = $('#' + faux_id, container);
+           
+           $('.item', container).animate({
+              opacity:'0.9',left: '-=' + item_width
+           }, 500, function () {
+              first.remove();
+              faux_elem.attr('id', faux_elem.attr('id').replace('faux', ''))
+           })
+        }, 6000)
+		var items2= ['sub2-category1', 'sub2-category2', 'sub2-category3','sub2-category4'];
+        var container2 = $('#sub2-category')
+        var item_width2 = 1350;
+	 
+		setInterval(function () {
+
+           var first2 = $('.item2:first', container2);
+           var faux_id2 = first2.attr('id') + 'faux';
+           var faux_elem2 = $($('<div/>').append(first2.clone()).html()).attr('id', faux_id2).css({
+              left: item_width2 * items2.length,
+              backgroundColor: first2.css('background-color')
+           })
+           container2.append(faux_elem2);
+           faux_elem2 = $('#' + faux_id2, container2);
+           
+           $('.item2', container2).animate({
+              opacity:'0.7',left: '-=' + item_width2
+           }, 500, function () {
+              first2.remove();
+              faux_elem2.attr('id', faux_elem2.attr('id').replace('faux', ''))
+           })
+        }, 6000)
+
+     }
+	 
+	 
+
+fade();
+$(function(){
+        SlideDivSection();
+     })
+</script>
+
+</body>
+</html>
