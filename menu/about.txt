@@ -1,12 +1,12 @@
 <div id="col1">
-<br><br><a href="template.php">IIITDMJ</a><br>
-<br><br><a href="template.php">Collaborators</a><br>
+<br><br><a href="template.html">IIITDMJ</a><br>
+<br><br><a href="template.html">Collaborators</a><br>
 
 </div>
 
 <div id="col2">
 
-<br><br><a href="template.php"> Infrastructure </a><br>
+<br><br><a href="template.html"> Infrastructure </a><br>
 
 </div>
 

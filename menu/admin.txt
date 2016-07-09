@@ -1,14 +1,14 @@
 
 <div id="col1">
-<br><br> <a href="template.php"> Administrative Structure </a> <br>
-<br><br> <a href="template.php"> Board Of Governors </a> <br>
-<br><br> <a href="template.php"> Finance Committee </a><br>
+<br><br> <a href="template.html"> Administrative Structure </a> <br>
+<br><br> <a href="template.html"> Board Of Governors </a> <br>
+<br><br> <a href="template.html"> Finance Committee </a><br>
 </div>
 
 <div id="col2" style="left:18em">
-<br><br> <a href="template.php"> Senate </a><br>
-<br><br> <a href="template.php"> Building Works Committee </a><br>
-<br><br> <a href="template.php"> Institue Administration </a><br>
+<br><br> <a href="template.html"> Senate </a><br>
+<br><br> <a href="template.html"> Building Works Committee </a><br>
+<br><br> <a href="template.html"> Institue Administration </a><br>
 </div>
 
 

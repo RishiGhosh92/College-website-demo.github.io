@@ -1,13 +1,13 @@
 
 <div id="col1">
-<br><br><strong> <a href="template.php"> Undergraduate </strong></a><br>
-<br><br> <a href="template.php"> Fee Structure </a><br>
+<br><br><strong> <a href="template.html"> Undergraduate </strong></a><br>
+<br><br> <a href="template.html"> Fee Structure </a><br>
 
 </div>
 
 <div id="col2">
-<br><br><strong> <a href="template.php"> Postgraduate </strong></a><br>
-<br><br> <a href="template.php"> Useful Information </a><br>
+<br><br><strong> <a href="template.html"> Postgraduate </strong></a><br>
+<br><br> <a href="template.html"> Useful Information </a><br>
 
 </div>
 

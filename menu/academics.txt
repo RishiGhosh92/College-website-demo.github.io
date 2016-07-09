@@ -1,13 +1,13 @@
 
 <div id="col1">
-<br><br> <a href="template.php"> Programme </a> <br>
-<br><br> <a href="template.php"> Discipline </a> <br>
+<br><br> <a href="template.html"> Programme </a> <br>
+<br><br> <a href="template.html"> Discipline </a> <br>
 
 </div>
 
 <div id="col2">
-<br><br> <a href="template.php"> Research and Development </a> <br>
-<br><br> <a href="template.php"> Academic Calendar </a> <br>
+<br><br> <a href="template.html"> Research and Development </a> <br>
+<br><br> <a href="template.html"> Academic Calendar </a> <br>
 
 </div>
 

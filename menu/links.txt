@@ -1,13 +1,13 @@
 
 <div id="col1">
-<br><br> <a href="template.php"> Placement Website </a> <br>
-<br><br> <a href="template.php"> NME-ICT Projects </a><br>
+<br><br> <a href="template.html"> Placement Website </a> <br>
+<br><br> <a href="template.html"> NME-ICT Projects </a><br>
 
 </div>
 
 <div id="col2">
-<br><br> <a href="template.php"> IntraWeb </a><br>
-<br><br> <a href="template.php"> Jabalpur City </a><br>
+<br><br> <a href="template.html"> IntraWeb </a><br>
+<br><br> <a href="template.html"> Jabalpur City </a><br>
 
 </div>
 
