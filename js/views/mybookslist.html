@@ -1,0 +1,84 @@
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<h1>mybookslist</h1>
+<input id="text-input" type="text" data-bind="ojComponent: {component:'ojInputText',rawValue:titleSearch,
+            optionChange:filterBooks}"/>
+<br/>
+<table id="table" summary="Books List" aria-label="Books Table"
+       data-bind="ojComponent: {component: 'ojTable', 
+                                data: dsBooks,
+                                columnsDefault: {sortable: 'none'}, 
+                                columns: [{headerText: 'Id'},
+                                          {headerText: 'Title'},
+                                          {headerText: 'Category'},
+                                          {headerText: 'Avg_User_Rating'},
+                                          {headerText: 'View'}
+                                      ],
+                                          rowTemplate:'row_tmpl'}">
+</table>
+
+<script type="text/html" id="row_tmpl">
+    <tr>
+        <td data-bind="text: _id">
+        </td>
+        <td data-bind="text: title">
+        </td>
+        <td data-bind="text: category">
+        </td>
+        <td>
+        <div id="gauge1" 
+		data-bind="ojComponent: {
+		  component: 'ojRatingGauge', 
+		  value:avg_user_rating,
+		  readOnly: true
+		 }" 
+		 style="width:120px;height:25px;">
+        </div>
+        </td>
+        <td>
+         <input id="inputButton" type="button" 
+                 data-bind="click:$parent.showBook,
+                      ojComponent: {component: 'ojButton', label: 'View'}"/>
+        </td> 
+    </tr>
+</script>
+
+  <div style="display:none" id="modalDialog1" title="Book Details" 
+       data-bind="ojComponent:{component: 'ojDialog', initialVisibility: 'hide',
+       rootAttributes: { style: 'width:55vw;height:55vh;'}}">
+     <div class="oj-dialog-body">
+       <div data-bind="with: currentBook">
+            <div class="oj-flex oj-flex-items-pad">
+                <div class="oj-sm-3 oj-flex-item">Title</div>
+                <div class="oj-sm-9 oj-flex-item" data-bind="text: title ? title : ''"></div>
+            </div>
+           <div class="oj-flex oj-flex-items-pad">
+                <div class="oj-sm-3 oj-flex-item">Category</div>
+                <div class="oj-sm-9 oj-flex-item" data-bind="text: category ? category.name : ''"></div>
+            </div>
+           <div class="oj-flex oj-flex-items-pad">
+                <div class="oj-sm-3 oj-flex-item">Author</div>
+                <div class="oj-sm-9 oj-flex-item" data-bind="text: author ? author.name : ''"></div>
+            </div>
+           <div class="oj-flex oj-flex-items-pad">
+                <div class="oj-sm-3 oj-flex-item">No of Users Slept</div>
+                <div class="oj-sm-9 oj-flex-item">
+                      <div id='pc1' data-bind="ojComponent:{
+      component: 'ojPictoChart',
+      items: pictoChartItems,
+      animationOnDisplay: 'auto',
+      columnCount: 5
+    }"
+    style="vertical-align:middle; margin-right:15px">
+  </div>
+                </div>
+            </div>
+        </div>
+     </div>
+      
+  </div>
+

@@ -1,0 +1,50 @@
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<h1>products</h1>
+<label for="text-input">Name</label>
+  <input id="text-input" 
+         type="text"
+         data-bind="ojComponent: {component: 'ojInputText', 
+                                  value: name}"/>
+<br/>  
+<label for="text-input">SKU</label> 
+  <input id="text-input1" 
+         type="text"
+         data-bind="ojComponent: {component: 'ojInputText', 
+                                  value: sku}"/>
+<br/>
+<label for="combobox">Categories</label>
+  <input id="combobox" 
+         data-bind="ojComponent: {component: 'ojCombobox', 
+                                  options: categories, 
+                                  optionChange:loadSubCategories,
+                                  rootAttributes: {style:'max-width:20em'}}"/> 
+<br/>
+<label for="combobox">Sub-Categories</label>
+  <input id="combobox" 
+         data-bind="ojComponent: {component: 'ojCombobox', 
+                                  options: subCategories,
+                                  value: selectedSubCategory,
+                                  rootAttributes: {style:'max-width:20em'}}"/>  
+<br/>
+<label for="inputnumber-id">Buying Price</label> 
+<input id="inputnumber-id"
+       data-bind="ojComponent: {
+        component: 'ojInputNumber', 
+        max:sellingPrice,
+        min:100, 
+        step:50, 
+        value:buyingPrice}"/>
+<br/>
+<label for="inputnumber-id">Selling Price</label> 
+<input id="inputnumber-id"
+       data-bind="ojComponent: {
+        component: 'ojInputNumber', 
+        max:5000,
+        min:buyingPrice, 
+        step:50, 
+        value:sellingPrice}"/>

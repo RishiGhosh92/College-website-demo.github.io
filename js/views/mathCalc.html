@@ -1,0 +1,22 @@
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<h1>mathCalc</h1>
+<label for="text-input">First Number</label>
+  <input id="text-input" 
+         type="text"
+         data-bind="ojComponent: {component: 'ojInputText', 
+                                  value: first}"/>
+  <input id="text-input1" 
+         type="text"
+         data-bind="ojComponent: {component: 'ojInputText', 
+                                  value: second}"/>
+  <br/>
+  <input id="inputButton" type="button" 
+           data-bind="click: addNumbers, 
+                      ojComponent: {component: 'ojButton', label: 'Add Numbers'}"/>
+  <br/>
+  <span data-bind="text:result"></span> 

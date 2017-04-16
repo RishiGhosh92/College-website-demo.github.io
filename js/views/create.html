@@ -1,0 +1,155 @@
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!-- Form Content Goes Here -->
+<br/><br/>
+<div class="oj-panel oj-panel-alt">
+<h3 class="oj-header-border">Add New Book</h3>
+<div class ="oj-form-layout">
+    <div class="oj-form oj-sm-odd-cols-12 oj-md-odd-cols-4 oj-form-cols-labels-inline oj-form-cols-max2">
+        <div class="oj-flex">
+            <div class="oj-flex-item">
+                <label for="num-id" data-bind="text:idLabel"></label>
+            </div>
+            <div class="oj-flex-item">
+                <input id="num-id" data-bind="ojComponent: {component: 'ojInputNumber', 
+                           step:1, value:book._id}"/>
+            </div>
+       </div>
+        <div class="oj-flex">
+            <div class="oj-flex-item">
+              <label for="txt-title">Title</label>
+            </div>
+            <div class="oj-flex-item">
+              <input id="txt-title"
+                     data-bind="ojComponent: {component: 'ojInputText', 
+                                              value:book.title, required: true}">
+            </div>
+        </div>
+        <div class="oj-flex">
+            <div class="oj-flex-item">
+              <label for="ta-description">Description</label>
+            </div>
+            <div class="oj-flex-item">
+               <textarea id="ta-description" rows="3"
+               data-bind="ojComponent: {component: 'ojTextArea', value: book.description}"></textarea>                            
+           </div>
+       </div>
+       <div class="oj-flex">
+            <div class="oj-flex-item">
+              <label for="sel-category">Category</label>
+            </div>
+            <div class="oj-flex-item">
+                <select id="sel-category"
+                    data-bind="ojComponent: {component: 'ojSelect', options: categories,
+                                   value: book.category,
+                                   rootAttributes: {style:'max-width:20em'}, required:true}">
+                </select>
+            </div>
+       </div>
+       <div class="oj-flex">
+            <div class="oj-flex-item">
+              <label for="sel-author">Author</label>
+            </div>
+            <div class="oj-flex-item">
+                <select id="sel-author"
+                    data-bind="ojComponent: {component: 'ojSelect', options: authors,
+                                   value: book.author,
+                                   rootAttributes: {style:'max-width:20em'}}">
+                </select>
+            </div>
+       </div>
+       <div class="oj-flex">
+            <div class="oj-flex-item">
+              <label for="sel-publisher">Publisher</label>
+            </div>
+            <div class="oj-flex-item">
+                <select id="sel-publisher"
+                    data-bind="ojComponent: {component: 'ojSelect', options: publishers,
+                                   value: book.publisher,
+                                   rootAttributes: {style:'max-width:20em'}}">
+                </select>
+            </div>
+       </div>
+       <div class="oj-flex">
+            <div class="oj-flex-item">
+              <label for="num-price">Price</label>
+            </div>
+            <div class="oj-flex-item">
+                <input id="num-price" data-bind="ojComponent: {component: 'ojInputNumber', 
+                           step:50, value:book.price}"/>
+            </div>
+       </div>  
+        <div class="oj-flex">
+            <div class="oj-flex-item">
+              <label for="txt-isbn">ISBN</label>
+            </div>
+            <div class="oj-flex-item">
+              <input id="txt-isbn"
+                     data-bind="ojComponent: {component: 'ojInputText', 
+                                              value:book.isbn}">
+            </div>
+        </div>
+        <div class="oj-flex">
+            <div class="oj-flex-item">
+              <label for="txt-lang">Language</label>
+            </div>
+            <div class="oj-flex-item">
+              <input id="txt-lang"
+                     data-bind="ojComponent: {component: 'ojInputText', 
+                                              value:book.language}">
+            </div>
+        </div>
+        <div class="oj-flex">
+            <div class="oj-flex-item">
+              <label for="num-pages">Pages</label>
+            </div>
+            <div class="oj-flex-item">
+                <input id="num-pages" data-bind="ojComponent: {component: 'ojInputNumber', 
+                           step:10, value:book.pages}"/>
+            </div>
+       </div>
+       <div class="oj-flex">
+            <div class="oj-flex-item">
+              <label for="num-rating">Avg User Rating</label>
+            </div>
+            <div class="oj-flex-item">
+                <input id="num-rating" data-bind="ojComponent: {component: 'ojInputNumber', 
+                           step:1,min:0, max:5,value:book.avg_user_rating}"/>
+            </div>
+       </div> 
+       <div class="oj-flex">
+            <div class="oj-flex-item">
+              <label for="num-slept">Avg Users Slept reading this book</label>
+            </div>
+            <div class="oj-flex-item">
+                <input id="num-slept" data-bind="ojComponent: {component: 'ojInputNumber', 
+                           step:1,min:0, max:5,value:book.avg_users_slept}"/>
+            </div>
+       </div>   
+   </div>
+   <div class="oj-form-control-group" >
+        <button id="btnAdd" data-bind="click:addBook, ojComponent: { component: 'ojButton', 
+                label: 'Add' }">
+        </button>
+       <button id="btnClear" data-bind="click:clearFields, ojComponent: { component: 'ojButton', 
+                label: 'Clear' }">
+       </button>
+    </div>
+</div>
+</div>
+
+
+<div id="dialogWrapper">
+  <div style="display:none" id="message" title="" data-bind="ojComponent:{component: 'ojDialog', initialVisibility: 'hide'}">
+     <div class="oj-dialog-header oj-helper-clearfix" aria-labelledby="dialogTitleId">
+        <span id="dialogTitleId" class="oj-dialog-title"> Success! </span> 
+     </div>
+     <div class="oj-dialog-body">
+        Book Detail are successfully added!
+     </div>
+  </div>
+</div>
+
